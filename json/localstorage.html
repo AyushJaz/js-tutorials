@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstorage</title>
+</head>
+<body>
+    <script>
+let product={
+    name:"Dell inspiron",
+    price:60000,
+    ratings:{
+        stars:4.5,
+        noOfReview:4586,
+    },
+    specification:{
+        displaySize:'16in',
+        ram:'8Gb',
+        storage:'1Tb',
+        storageType:"HDD",
+          },
+}
+localStorage.setItem('product',JSON.stringify(product));
+console.log(JSON.parse(localStorage.getItem('product')));    
+</script>
+</body>
+</html>
