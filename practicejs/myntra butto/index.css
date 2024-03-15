@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#add-to-bag{
+    background-color: rgb(154 236 154);
+    color: black;
+    padding: 5px 10px;
+    border: 0px;
+    margin: 6px;
+    border-radius: 10px;
+}
+#add-to-wishlist{
+    font-weight: bold;
+    background-color: rgb(223, 227, 231);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+#add-sale-item{
+    background-color: rgb(154 236 154);
+    color: black;
+    padding: 5px 10px;
+    border: 0px;
+    margin: 6px;
+    border-radius: 10px;
+}
+p{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}

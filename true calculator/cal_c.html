@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <div class="claculator">
+        <div class="screen">
+            <input type="text" maxlength="26" id="display">
+        </div>
+        <div class="pad">
+            <div class="nums">
+                <div class="row1">
+                    <button class="arikeys button" value="reci">1/x</button>
+                    <button class=" arikeys button" value="pow">x<sup>y</sup></button>
+                    <button class=" arikeys button" value="root">x <sup>1/2</sup></button>
+                    <button class=" arikeys button" value="back"><span class="material-symbols-outlined">
+                            backspace
+                        </span>
+                    </button>
+                </div>
+                <div class="row">
+                    <button class=" arikeys button" value="per">%</button>
+                    <button class="arikeys button" value="c">Ac</button>
+                   <div class="braket"> 
+                    <button class=" arikeys button" value="brack-one">(</button>
+                    <button class=" arikeys button" value="brack-two">)</button> </div>
+                    <button class=" arikeys button" value="div">/</button>
+                </div>
+                <div class="row">
+                    <button class=" keys button" id="one" value="1">1</button>
+                    <button class=" keys button" id="two" value="2">2</button>
+                    <button class=" keys button" id="three" value="3">3</button>
+                    <button class="arikeys button" id="min" value="min">-</button>
+                </div>
+                <div class="row">
+                    <button class=" keys button" value="4">4</button>
+                    <button class="keys button" value="5">5</button>
+                    <button class="keys button" value="6">6</button>
+                    <button class=" arikeys button" value="mul">*</button>
+                </div>
+                <div class="row">
+                    <button class="keys button" value="7">7</button>
+                    <button class="keys button" value="8">8</button>
+                    <button class="keys button" value="9">9</button>
+                    <button class=" arikeys button" value="add">+</button>
+                </div>
+                <div class="row5">
+                    <button class=" keys button" value=".">.</button>
+                    <button class=" keys button" value="0">0</button>
+                    <button class="arikeys button" value="opp">+/-</button>
+                    <button class=" arikeys equal button" value="che">=</button>
+                </div>
+            </div>
+        </div>
+        <script lang="javascript" src="cal.js"></script>
+    </div>
+    
+</body>
+</html>

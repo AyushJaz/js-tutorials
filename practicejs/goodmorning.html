@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greating</title>
+</head>
+
+<body>
+    <h1>hi
+    </h1>
+    <h3></h3>
+    <script>
+        let date = new Date();
+        date = date.getHours();
+        if (date>4&&date< 12)
+            document.querySelector('h1').innerText = 'good morning';
+        else if (date < 16)
+            document.querySelector('h1').innerText = 'good after noon';
+        else if (date < 19)
+            document.querySelector('h1').innerText = 'good evening';
+        else
+            document.querySelector('h1').innerText = 'good night';
+            document.querySelector('h3').innerText='Ayush'
+    </script>
+</body>
+
+</html>

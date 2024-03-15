@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Count</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            width: 60px;
+            height:60px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius:15px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="count()"></button>
+    <script>
+        let c=JSON.parse(localStorage.getItem('c'))||0;
+        changeColor();
+        document.querySelector('button').innerText=c;
+        function changeColor()
+        {
+            if(c%2===0)
+            {
+            document.querySelector('button').style.backgroundColor="#ff8d00ba";
+            document.querySelector('body').style.backgroundColor="#43a0d5b0";
+            }
+        else
+        {
+        document.querySelector('button').style.backgroundColor="#43a0d5b0";
+    document.querySelector('body').style.backgroundColor="#ff8d00ba";
+        }
+        }
+        function count()
+        {
+            c++;
+            localStorage.setItem('c',c);
+            document.querySelector('button').innerText=c;
+            changeColor();
+        }
+        
+
+    </script>
+</body>
+</html>
